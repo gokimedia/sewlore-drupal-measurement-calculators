@@ -1,0 +1,7 @@
+block.settings.sewlore_measurement_calculators:
+  type: block_settings
+  label: 'Sewlore measurement calculator settings'
+  mapping:
+    show_reference:
+      type: boolean
+      label: 'Show the optional measurement reference link'

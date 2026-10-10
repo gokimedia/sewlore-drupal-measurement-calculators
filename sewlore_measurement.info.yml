@@ -1,0 +1,6 @@
+name: Sewlore Measurement Calculators
+type: module
+description: 'Local fabric stretch, recovery, button-centre and unit calculators as a configurable Drupal block.'
+package: Tools
+core_version_requirement: ^11
+version: 1.0.0

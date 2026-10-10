@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Theme registration for Sewlore Measurement Calculators.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function sewlore_measurement_theme($existing, $type, $theme, $path): array {
+  return [
+    'sewlore_measurement_calculators' => [
+      'variables' => ['instance_id' => NULL, 'show_reference' => FALSE],
+      'template' => 'sewlore-measurement-calculators',
+    ],
+  ];
+}

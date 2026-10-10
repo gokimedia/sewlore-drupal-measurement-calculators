@@ -1,0 +1,7 @@
+.sewlore-measurement { max-width: 54rem; margin: 1rem auto; color: #172c29; }
+.sewlore-measurement form { padding: 1rem; margin: 1rem 0; border: 1px solid #c4d2ce; border-radius: .6rem; background: #f5f8f6; }
+.sewlore-measurement label { display: block; margin-top: .7rem; font-weight: 600; }
+.sewlore-measurement input, .sewlore-measurement select { box-sizing: border-box; width: 100%; max-width: 24rem; padding: .6rem; }
+.sewlore-measurement button { display: block; margin-top: 1rem; padding: .65rem 1rem; }
+.sewlore-measurement output { display: block; margin-top: .8rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.sewlore-measurement output[data-error] { color: #9d2525; }

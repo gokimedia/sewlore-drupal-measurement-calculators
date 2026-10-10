@@ -1,0 +1,7 @@
+sewlore_measurement.demo:
+  path: '/sewlore-measurement-calculators'
+  defaults:
+    _controller: '\Drupal\sewlore_measurement\Controller\CalculatorDemoController::page'
+    _title: 'Sewing measurement calculators'
+  requirements:
+    _access: 'TRUE'

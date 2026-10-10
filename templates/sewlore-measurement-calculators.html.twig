@@ -1,0 +1,46 @@
+<section class="sewlore-measurement" data-sewlore-measurement>
+  <h2>{{ 'Sewing measurement calculators'|t }}</h2>
+  <p>{{ 'Enter your own readings. Calculations run in your browser and are not saved or sent.'|t }}</p>
+  <p data-sewlore-ready-note>{{ 'JavaScript is required. Calculation buttons become available when the calculators load.'|t }}</p>
+  <noscript><p>{{ 'Enable JavaScript to use these calculators. Calculation buttons are disabled while JavaScript is unavailable.'|t }}</p></noscript>
+  <form data-calculator="stretch">
+    <h3>{{ 'Fabric stretch and recovery'|t }}</h3>
+    <p>{{ 'Use the same unit for all three lengths. Readings describe this measurement only.'|t }}</p>
+    <label for="{{ instance_id }}-original">{{ 'Original length'|t }}</label>
+    <input id="{{ instance_id }}-original" name="original" type="text" inputmode="decimal" required autocomplete="off">
+    <label for="{{ instance_id }}-stretched">{{ 'Stretched length'|t }}</label>
+    <input id="{{ instance_id }}-stretched" name="stretched" type="text" inputmode="decimal" required autocomplete="off">
+    <label for="{{ instance_id }}-released">{{ 'Released length'|t }}</label>
+    <input id="{{ instance_id }}-released" name="released" type="text" inputmode="decimal" required autocomplete="off">
+    <button type="submit" disabled>{{ 'Calculate stretch'|t }}</button>
+    <output aria-live="polite"></output>
+  </form>
+  <form data-calculator="buttons">
+    <h3>{{ 'Button centre spacing'|t }}</h3>
+    <p>{{ 'All lengths use the same unit. Count includes the first and last button.'|t }}</p>
+    <label for="{{ instance_id }}-length">{{ 'Total length'|t }}</label>
+    <input id="{{ instance_id }}-length" name="length" type="text" inputmode="decimal" required autocomplete="off">
+    <label for="{{ instance_id }}-top">{{ 'Start margin'|t }}</label>
+    <input id="{{ instance_id }}-top" name="top" type="text" inputmode="decimal" required autocomplete="off">
+    <label for="{{ instance_id }}-bottom">{{ 'End margin'|t }}</label>
+    <input id="{{ instance_id }}-bottom" name="bottom" type="text" inputmode="decimal" required autocomplete="off">
+    <label for="{{ instance_id }}-count">{{ 'Button count (2–100)'|t }}</label>
+    <input id="{{ instance_id }}-count" name="count" type="number" min="2" max="100" step="1" required autocomplete="off">
+    <button type="submit" disabled>{{ 'Calculate button centres'|t }}</button>
+    <output aria-live="polite"></output>
+  </form>
+  <form data-calculator="convert">
+    <h3>{{ 'Length unit conversion'|t }}</h3>
+    <label for="{{ instance_id }}-value">{{ 'Length (zero or greater)'|t }}</label>
+    <input id="{{ instance_id }}-value" name="value" type="text" inputmode="decimal" required autocomplete="off">
+    <label for="{{ instance_id }}-from">{{ 'From unit'|t }}</label>
+    <select id="{{ instance_id }}-from" name="from"><option value="cm">cm</option><option value="mm">mm</option><option value="in">in</option></select>
+    <label for="{{ instance_id }}-to">{{ 'To unit'|t }}</label>
+    <select id="{{ instance_id }}-to" name="to"><option value="mm">mm</option><option value="cm">cm</option><option value="in">in</option></select>
+    <button type="submit" disabled>{{ 'Convert length'|t }}</button>
+    <output aria-live="polite"></output>
+  </form>
+  {% if show_reference %}
+    <p><a href="https://sewlore.com/pages/fabric-measurement-methods-guide">{{ 'Measurement methods and worked examples — Sewlore'|t }}</a></p>
+  {% endif %}
+</section>
