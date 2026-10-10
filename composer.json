@@ -1,11 +1,27 @@
 {
   "name": "sewlore/measurement-calculators",
-  "description": "Local fabric measurement calculators as a Drupal block",
+  "description": "Local fabric stretch and recovery, button-centre spacing, and length conversion calculators for Drupal 11.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
-  "version": "1.0.0",
+  "homepage": "https://sewlore.com/pages/fabric-measurement-methods-guide",
+  "keywords": [
+    "drupal",
+    "sewing",
+    "measurement",
+    "calculator",
+    "fabric"
+  ],
   "require": {
+    "php": ">=8.3",
+    "composer/installers": "^2.3",
     "drupal/core": "^11"
   },
-  "homepage": "https://sewlore.com/pages/fabric-measurement-methods-guide"
+  "extra": {
+    "installer-name": "sewlore_measurement"
+  },
+  "support": {
+    "issues": "https://github.com/gokimedia/sewlore-drupal-measurement-calculators/issues",
+    "source": "https://github.com/gokimedia/sewlore-drupal-measurement-calculators",
+    "docs": "https://github.com/gokimedia/sewlore-drupal-measurement-calculators#readme"
+  }
 }
